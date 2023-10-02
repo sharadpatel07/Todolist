@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TODO</h1>
+    </div>
+    <div class="form">
+        <span class="n">NAME </span> <input type="text" name="NAME" id="name" placeholder="Enter Your Full Name">
+        <br>
+        <br>
+        <span class="g">GENDER </span>
+        <input type="radio" name="gender" id="male" value='MALE' ><span class="">MALE </span>
+        <input type="radio" name="gender" class="female" value="FEMALE"><span>FEMALE</span>
+        <input type="radio" name="gender" id="other" value="OTHER"><span>OTHER</span>
+        <br>
+        <br>
+        <span class="h">HOBBY </span>
+        <input type="checkbox" name="checkbox" id="reading" value="READING">READING
+        <input type="checkbox" name="checkbox" id="swimming" value="SWIMMING">SWIMMING
+        <input type="checkbox" name="checkbox" id="cricket" value="CRICKET">CRICKET
+        <br>
+        <input type="checkbox" name="checkbox" id="games" value="GAMES">GAMES
+        <input type="checkbox" name="checkbox" id="coding" value="CODING">CODING
+        <input type="checkbox" name="checkbox" id="football" value="FOOTBALL"> FOOTBALL
+        <br>
+        <br>
+        <span class="c">COMMENT </span>
+        <textarea placeholder="add comment" id="comment"></textarea>
+        <br>
+        <button class="btn" id="custemSubmit" onclick="toggleBtn()">Submit now</button>
+    </div>
+
+    <div class="table">
+      <h1 class="tbl-name">TABLE</h1>
+        <table>
+            <tr>
+              <th>NAME</th>
+              <td id="line0"></td>
+              <td id="line1"></td>
+
+
+            </tr>
+            <tr>
+              <th>GENDER</th>
+              <td id="line3"></td>
+              <td id="line4"></td>
+
+            </tr>
+            <tr>
+              <th>HOBBY</th>
+              <td id="line6"></td>
+              <td id="line7"></td>
+
+
+            </tr>
+            <tr>
+                <th>COMMENT</th>
+                <td id="line9"></td>
+                <td id="line10"></td>
+
+              </tr>
+          </table>
+          <button class="btn" id="Clearall" onclick="CleBtn()">Clear All</button>
+    </div>
+</body>
+<script src="todo.js"></script>
+
+</html>
